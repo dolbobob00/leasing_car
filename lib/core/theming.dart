@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Theme{
+class Themes{
   static bool? isLight;
   static final themeLight = ThemeData(
     colorScheme: const ColorScheme.light(
