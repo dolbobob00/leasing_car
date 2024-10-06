@@ -33,7 +33,10 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -47,29 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA12xiEGGUW2Z_n46FVAu3mm2N13cGbXjU',
-    appId: '1:645140837596:android:2af3a2470296f958f9b019',
-    messagingSenderId: '645140837596',
-    projectId: 'leasing-f3da0',
-    storageBucket: 'leasing-f3da0.appspot.com',
+    apiKey: 'AIzaSyAL1Y1MecxUn4VHhWtrxXHExjElldo52II',
+    appId: '1:494504515099:android:c758d1bb1505bef4f14abe',
+    messagingSenderId: '494504515099',
+    projectId: 'carleasing-8c309',
+    storageBucket: 'carleasing-8c309.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCOmyR9WkLo87b_FbpnD1-em7jIGr3Yz84',
-    appId: '1:645140837596:ios:a008b1563fd534a2f9b019',
-    messagingSenderId: '645140837596',
-    projectId: 'leasing-f3da0',
-    storageBucket: 'leasing-f3da0.appspot.com',
+    apiKey: 'AIzaSyC4tNtAP6CzcPbwU73jK__X8A2mac2cL3Y',
+    appId: '1:494504515099:ios:887f0f354b01cf3ef14abe',
+    messagingSenderId: '494504515099',
+    projectId: 'carleasing-8c309',
+    storageBucket: 'carleasing-8c309.appspot.com',
     iosBundleId: 'com.example.leasingCar',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCxNSVYMI8reNWsEAIb8yYfRBWWCZTDqlw',
-    appId: '1:645140837596:web:ea85c2aca83ca242f9b019',
-    messagingSenderId: '645140837596',
-    projectId: 'leasing-f3da0',
-    authDomain: 'leasing-f3da0.firebaseapp.com',
-    storageBucket: 'leasing-f3da0.appspot.com',
-    measurementId: 'G-6J0TWN08T7',
   );
 }

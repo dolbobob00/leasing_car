@@ -7,7 +7,7 @@ part 'splash_screen_event.dart';
 part 'splash_screen_state.dart';
 
 class SplashScreenBloc extends Bloc<SplashScreenEvent, SplashScreenState> {
-  FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
   SplashScreenBloc() : super(SplashScreenInitial()) {
     on<SplashScreenCheckLoggedEvent>(_onCheckingStatus);
@@ -16,9 +16,15 @@ class SplashScreenBloc extends Bloc<SplashScreenEvent, SplashScreenState> {
   _onCheckingStatus(
     SplashScreenCheckLoggedEvent event,
     Emitter<SplashScreenState> emit,
-  ) {
+  ) async {
     emit(
-      SplashScreenLoading().state,
+      SplashScreenLoading(),
+    );
+    await Future.delayed(
+      const Duration(
+        seconds: 2,
+        milliseconds: 500,
+      ),
     );
     _firebaseAuth.currentUser == null
         ? emit(
@@ -26,7 +32,7 @@ class SplashScreenBloc extends Bloc<SplashScreenEvent, SplashScreenState> {
           )
         : emit(
             SplashScreenCheckedLoggedState(
-                true, _firebaseAuth.currentUser!.uid),
+                true, _firebaseAuth.currentUser?.uid),
           );
   }
 }

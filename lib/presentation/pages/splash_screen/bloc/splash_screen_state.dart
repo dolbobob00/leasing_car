@@ -4,7 +4,7 @@ abstract class SplashScreenState {}
 
 final class SplashScreenInitial extends SplashScreenState {}
 
-class SplashScreenLoading extends SplashScreenBloc {}
+class SplashScreenLoading extends SplashScreenState {}
 
 class SplashScreenCheckedLoggedState extends SplashScreenState {
   SplashScreenCheckedLoggedState(

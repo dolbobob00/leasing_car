@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "645140837596",
-    "project_id": "leasing-f3da0",
-    "storage_bucket": "leasing-f3da0.appspot.com"
+    "project_number": "494504515099",
+    "project_id": "carleasing-8c309",
+    "storage_bucket": "carleasing-8c309.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:645140837596:android:2af3a2470296f958f9b019",
+        "mobilesdk_app_id": "1:494504515099:android:c758d1bb1505bef4f14abe",
         "android_client_info": {
-          "package_name": "com.leasing_car.app"
+          "package_name": "com.example.leasing_car"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA12xiEGGUW2Z_n46FVAu3mm2N13cGbXjU"
+          "current_key": "AIzaSyAL1Y1MecxUn4VHhWtrxXHExjElldo52II"
         }
       ],
       "services": {
